@@ -8,7 +8,7 @@ const data = [
     link: 'https://linkedin.com/in/pedro-abbasi/',
     icon: <RiLinkedinBoxFill style={{ color: '#0e76a8' }} className="social-icon" />},
     {id: 2,
-    link: 'https://instagram.com/pedroabbasi/',
+    link: 'https://github.com/jpabbasi',
     icon: <RiGithubFill style={{ color: '4078c0' }} className="social-icon" />},
     {id: 3,
     link: 'https://instagram.com/pedroabbasi/',
