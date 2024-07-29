@@ -60,7 +60,7 @@ const App = () => {
       <Info/>
       <Contact/>
       <Footer/>
-      {<FloatingNav isVisible={showFloatingNav}/>}
+      <FloatingNav isVisible={showFloatingNav}/>
     </main>
   )
 }
