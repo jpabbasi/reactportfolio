@@ -9,7 +9,7 @@ const Info = () => {
       <p>
         Here are some questions I usually get. Click to toggle the answer, and if you still got doubts, send me a message from the contact section.
       </p>
-      <div className="container faqs__container">
+      <div className="container faqs__container" data-aos="fade-in">
         {faqs.map(faq => (
             <FAQ key={faq.id} faq={faq}/>
           ))}
