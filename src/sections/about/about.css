@@ -5,6 +5,8 @@
 }
 
 .about__portrait {
+    border-radius: var(--border-radius-2);
+    background-color: var(--color-white);
     height: fit-content;
     max-height: 40rem;
     border: 1rem solid var(--color-white);
@@ -21,6 +23,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: var(--border-radius-2);
 }
 
 .about__cards {
@@ -55,6 +58,7 @@
 }
 
 .about__right p {
+    white-space: pre-wrap;
     margin-bottom: 0.8rem;
 }
 

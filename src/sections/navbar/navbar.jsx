@@ -1,22 +1,24 @@
-import Logo from '../../assets/Logo.jpg'
-import NewLogo from '../../assets/NewLogo.png'
 import data from './data'
-import { CgDarkMode } from "react-icons/cg";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { MdOutlineModeNight } from "react-icons/md";
 import './navbar.css'
+import { Avatar } from '@mui/material';
 
-const Navbar = () => {
+const Navbar = ({currentTheme, themeHandler}) => {
   return (
     <nav>
       <div className="container nav__container">
-        <a href="index.html" className='nav__logo'>
-          <img src={Logo} alt="Logo" className="nav__logo" />
-        </a>
+        <a href="index.html">
+          <Avatar sx={{ bgcolor: 'var(--color-secondary)'}}>⚡</Avatar>
+        </a> 
         <ul className='nav__menu'>
           {
             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
         </ul>
-        <button id='theme__icon'><CgDarkMode/></button>
+        <button id='theme__icon' onClick={themeHandler}>
+        {currentTheme === 'bg-1' ? <MdOutlineWbSunny /> : <MdOutlineModeNight />}
+        </button>
       </div>
     </nav>
   )

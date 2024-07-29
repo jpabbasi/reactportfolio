@@ -6,16 +6,16 @@ import {AiFillAppstore} from 'react-icons/ai'
 
 const data = [
     {
-        id: 1, icon: <SiAdobexd/>, title: 'UI/UX Design', desc: "My designs are modern and intuitive. I use industry-standard rules to make sure your users have fun using your product."
+        id: 1, icon: <SiAdobexd/>, title: 'UI/UX Design', desc: "My designs are not just modern and intuitive; they're crafted to captivate and engage users. Utilizing industry-leading principles, I ensure your users will enjoy every interaction with your product."
     },
     {
-        id: 2, icon: <RiReactjsLine/>, title: 'Frontend Development', desc: "Your product will look good and will be accessible on all devices, including mobile phones, tablets, and desktop."
+        id: 2, icon: <RiReactjsLine/>, title: 'Frontend Development', desc: "Your product will look stunning and function flawlessly on all devices, from mobile phones and tablets to desktops. I ensure a seamless and visually appealing user experience."
     },
     {
-        id: 3, icon: <FaServer/>, title: 'Backend Development', desc: "The security of your business/product is taken seriously right from the start of the project. I will make sure your website/app is secure from attacks."
+        id: 3, icon: <FaServer/>, title: 'Backend Development', desc: "From the outset, your business's security is my top priority. I implement robust measures to safeguard your website or app against any threats, ensuring peace of mind and reliability."
     },
     {
-        id: 4, icon: <AiFillAppstore/>, title: 'App Development', desc: 'Unlike other developers in the market, I will building an app that runs on both IOS and Android devices without any extra cost to you.'
+        id: 4, icon: <AiFillAppstore/>, title: 'App Development', desc: "I develop apps that are not only innovative but also user-friendly and efficient. Your app will stand out in the crowded marketplace with its superior performance and sleek design."
     }
 ]
 

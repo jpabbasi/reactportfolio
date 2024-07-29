@@ -1,0 +1,151 @@
+.portfolio__categories {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn.cat__btn {
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.btn.cat__btn:hover {
+    transform: translateY(0)
+}
+
+.portfolio__projects {
+    justify-content: center;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.card.portfolio__project {
+    animation: animateProject 800ms ease-in forwards
+}
+
+.card.portfolio__project h6 {
+    color: var(--color-dark);
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 1rem;
+}
+
+.card__divider {
+    padding-top: 0.75rem;
+}
+
+.portfolio__project-achievs {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.portfolio__project-achiev {
+    font-weight: 700;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.portfolio__project-milestones {
+    margin: 0 1rem 1rem;
+}
+
+.portfolio__project-milestone {
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem;
+}
+
+@keyframes animateProject {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.portfolio__project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 7rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__project p {
+    margin: 0.5rem 0 0.5rem;
+}
+
+.portfolio__project-cta {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio__project:hover .btn.sm {
+    border-color: var(--color-white);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.flex-item-wrapper {
+    align-items: flex-end;
+    display: flex;
+    flex-grow: 1;
+  }
+  
+.flex-item {
+    margin-right: 0.5rem;
+  }
+  
+.flex-button {
+    display: flex;
+    gap: 1rem; 
+    margin-left: auto;
+  }
+
+
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .portfolio__projects {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .card.portfolio__project {
+        min-height: 100%;
+    }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .portfolio__categories {
+        gap: 0.6rem;
+    }
+
+    .btn.cat__btn {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .portfolio__projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

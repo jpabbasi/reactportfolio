@@ -7,9 +7,37 @@ header {
     transition: var(--transition);
 }
 
+.social-button {
+    display: inline-block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-black);
+    padding: 0.4rem;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+  }
+
+  .social-button:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  .social-button h4 {
+    margin-left: 0.5rem;
+    font-weight: normal;
+  }
+  
+  .social-icon {
+    /* color: #0e76a8; */
+    font-size: 24px;
+  }
+
 .header__container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
     position: relative;
 }
@@ -20,6 +48,7 @@ header {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header__profile img {
@@ -27,6 +56,8 @@ header {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border: 5px solid var(--color-light);
+    border-radius: 50%;
 }
 
 .header__container p {
@@ -35,36 +66,46 @@ header {
     margin: 0.6rem 0 2rem;
 }
 
-.header__cta {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-
 .header__socials {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: flex;
     gap: 1rem;
 }
 
-.header__socials a {
-    width: 1.8rem;
-    aspect-ratio: 1/1;
-    background: var(--color-light);
-    color: var(--color-black);
-    display: grid;
-    place-items: center;
-    border-radius: var(--border-radius-3);
+.header__title {
+    width: 60%;
+    margin-left: 5rem;
 }
 
-.header__socials a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-    transform: translateX(-0.5rem);
+.header__buttons {
+    display: flex;
+    gap: 1rem;
 }
+
+.header__container h1 {
+    margin: 1rem 0;
+}
+
+.header__container h4 {
+    color: var(--color-dark)
+}
+
+.header__maincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.title_content {
+  text-align: left;
+}
+
+header .header__title .header__divider {
+    width: 100%;
+    margin: 1rem 0;
+  }
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px){
@@ -72,26 +113,25 @@ header {
         margin-top: 0;
         height: 100vh;
     }
+
+    .header__buttons {
+        display: none;
+    }
+
+    .header__profile {
+        width: 14rem;
+        height: 14rem;
+    }
 }
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px){
     .header__profile {
-        width: 14rem;
-        height: 17rem;
-        max-width: 60%;
-        max-height: 35vh;
+        width: 10rem;
+        height: 10rem;
     }
 
     .header__container p {
         width: 100%;
-    }
-
-    .header__cta {
-        gap: 1rem;
-    }
-
-    .header__socials {
-        display: none;
     }
 }

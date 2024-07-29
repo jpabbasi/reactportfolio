@@ -7,7 +7,6 @@
 }
 
 .card:hover {
-    background: transparent;
     border-color: var(--color-white);
     transform: translateY(-0.5rem);
 }

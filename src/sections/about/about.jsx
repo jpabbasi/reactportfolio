@@ -4,6 +4,7 @@ import './about.css'
 import { HiDownload } from "react-icons/hi";
 import Card from '../../components/Card'
 import data from './data'
+import { Button } from '@mui/material';
 
 const about = () => {
   return (
@@ -28,15 +29,11 @@ const about = () => {
             }
           </div> 
           <p>
-          I’m a Brazilian Software Engineer with a strong background in Product
-          Management and UX/UI Designing with over 5 years of tech industry experience.
+          &nbsp; From the bustling tech hubs to the intricate world of user experience,
+          I've navigated diverse projects that demanded a perfect blend of creativity and technical prowess. Whether it's refining a product's architecture or diving deep into fullstack development and deployment, my work is driven by a simple principle: making technology more intuitive and effective for everyone.
+          I believe that technology should not only solve problems but also inspire and empower its users. This philosophy has guided me in every project, pushing the boundaries of what’s possible and creating solutions that resonate on a deeper level.
           </p>
-          <p>
-          I’ve been collaborating with significant companies to improve their systems and design,
-          as well as their workflow. Also worked on personal projects, from product design and architecture
-          to fullstack development and deployment.
-          </p>
-          <a href={CV} download className='btn primary'>Download CV<HiDownload /></a>
+          <Button sx={{ fontFamily: 'SF Pro Display, sans-serif'}} href={CV} download className='btn sm primary'>Download CV<HiDownload /></Button>
         </div>
       </div>
     </section>
